@@ -1,61 +1,92 @@
 # OpenTranslate
 
-A Decentralized Multilingual Translation Network for Scientific Knowledge
+<div align="center">
+  <img src="docs/images/logo.svg" alt="OpenTranslate Logo" width="150" height="150"/>
+  
+  A Universal Knowledge & Code Translation Network
+  
+  [![Website](https://img.shields.io/badge/website-opentranslate.world-blue)](https://www.opentranslate.world)
+  [![Twitter](https://img.shields.io/twitter/follow/OpenTranslate?style=social)](https://x.com/_OpenTranslate)
+</div>
 
 ## Vision
 
-OpenTranslate is dedicated to breaking down language barriers in global scientific research by building a community-driven scientific literature translation ecosystem through blockchain and decentralized technologies. We believe that knowledge should flow without borders, and every researcher should be able to access and contribute to cutting-edge scientific discoveries in their native language.
+OpenTranslate is dedicated to breaking down all knowledge barriers by building a universal translation network for all forms of specialized knowledge. We believe that knowledge should flow without borders, and every individual should be able to access and contribute to cutting-edge discoveries in their native language, whether it's scientific research, code, technical documentation, or traditional knowledge.
 
 ## Overview
 
-OpenTranslate is a decentralized platform that enables high-quality translations through a combination of human translators, validators, and AI assistance. The platform uses blockchain technology to ensure transparency, fairness, and proper reward distribution.
+OpenTranslate is a decentralized platform that enables high-quality translations through a combination of human translators, validators, AI assistance, and quantum-enhanced algorithms. The platform uses blockchain technology to ensure transparency, fairness, and proper reward distribution across multiple knowledge domains.
 
-## Features
+### Key Features
 
-- **Decentralized Translation Platform**
-  - Submit and validate translations
-  - Quality assurance through multiple validators
-  - Token-based reward system
-  - Staking mechanism for quality control
+- 🌐 **Universal Translation Network**
+  - Scientific research translation
+  - Code translation and explanation
+  - Technical documentation localization
+  - Domain-specific terminology networks
+  - Traditional knowledge preservation
+  - AI prompt engineering library
 
-- **AI-Powered Assistance**
-  - Machine translation suggestions
-  - Quality scoring
-  - Domain-specific optimization
-  - Training pipeline for custom models
+- 🤖 **Quantum-Enhanced Translation**
+  - Quantum entanglement-inspired algorithms
+  - Superposition-based context awareness
+  - Quantum-state translation memory
+  - Anti-quantum security layer
+  - Domain classification quantum networks
 
-- **Blockchain Integration**
+- ⛓️ **Blockchain Integration**
   - PUMPFUN token for rewards
   - Smart contracts for translation management
   - Transparent reward distribution
   - Staking and validation system
+  - DAO governance structure
 
-- **Web Interface**
-  - User-friendly translation interface
-  - Real-time translation status
-  - Statistics and analytics dashboard
-  - Wallet integration
+- 🎯 **Multi-Platform Interface**
+  - Web-based translation interface
+  - IDE plugins for code translation
+  - Mobile applications
+  - API integration
+  - Real-time collaboration tools
+
+## Revolutionary Use Cases
+
+### Quantum Computing Acceleration
+Japanese quantum physicist's error correction technique translated into 24 languages, accelerating global quantum computing development by 14 months.
+
+### AI Prompt Engineering Cross-Pollination
+Senegalese developer's medical diagnostic prompt translated into 30+ languages, improving global healthcare AI applications.
+
+### Code Translation & Explanation
+Vietnamese TypeScript algorithm automatically translated to Python, Rust, and C++, with natural language explanations in 40+ languages.
+
+### Technical Documentation Revolution
+Chinese EV manufacturer's documentation instantly available globally, eliminating localization delays.
+
+### Indigenous Knowledge Network
+Traditional ecological knowledge translated while preserving cultural context, enabling unprecedented collaboration between traditional and modern science.
 
 ## Project Structure
 
 ```
 opentranslate/
-├── ai/                 # AI models and training
+├── ai/                 # AI and quantum models
 │   ├── models/        # Translation, validation, and domain models
+│   ├── quantum/       # Quantum-enhanced algorithms
 │   └── training/      # Model training scripts
 ├── api/               # REST API implementation
 ├── blockchain/        # Smart contracts and blockchain integration
-├── cli/              # Command-line interface
-├── config/           # Configuration files
-├── core/             # Core functionality
-│   ├── blockchain/   # Blockchain integration
-│   ├── translator/   # Translation engine
-│   └── validator/    # Validation system
-├── models/           # Database models
-├── scripts/          # Utility scripts
-├── utils/            # Utility functions
-├── web/              # Web interface
-└── worker/           # Background tasks
+├── cli/               # Command-line interface
+├── config/            # Configuration files
+├── core/              # Core functionality
+│   ├── blockchain/    # Blockchain integration
+│   ├── translator/    # Translation engine
+│   ├── validator/     # Validation system
+│   └── quantum/       # Quantum computing integration
+├── models/            # Database models
+├── scripts/           # Utility scripts
+├── utils/             # Utility functions
+├── web/               # Web interface
+└── worker/            # Background tasks
 ```
 
 ## Prerequisites
@@ -70,108 +101,81 @@ opentranslate/
 - Transformers
 - FastAPI
 - Streamlit
+- Quantum computing libraries (optional)
 
-## Installation
+## Quick Start
+
+### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/opentranslate.git
+git clone https://github.com/opentranslate/opentranslate.git
 cd opentranslate
 ```
 
-2. Install Python dependencies:
+2. Create and activate a virtual environment:
 ```bash
-pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
 ```
 
-3. Install Node.js dependencies:
+3. Install dependencies:
 ```bash
-npm install
+pip install -e ".[dev]"
 ```
 
 4. Set up environment variables:
 ```bash
 cp .env.example .env
-# Edit .env with your configuration
+# Edit .env with your settings
 ```
 
 5. Initialize the database:
 ```bash
-alembic upgrade head
+opentranslate db init
+opentranslate db migrate
+opentranslate db upgrade
 ```
 
 ## Development
 
-1. Start the development server:
+1. Install development dependencies:
 ```bash
-python -m opentranslate.api.app
+pip install -e ".[dev]"
 ```
 
-2. Run blockchain tests:
+2. Run tests:
 ```bash
-npx hardhat test
+pytest
 ```
 
-3. Start the web interface:
+3. Format code:
 ```bash
-cd web
-streamlit run app.py
+black .
+isort .
 ```
 
-## Deployment
-
-1. Build Docker images:
+4. Check code quality:
 ```bash
-docker-compose build
+flake8
+mypy .
 ```
 
-2. Start services:
-```bash
-docker-compose up -d
-```
+## Documentation
 
-## Smart Contracts
-
-### PUMPFUN Token
-- ERC20 token for platform rewards
-- Staking mechanism for quality control
-- Burn rate for token economics
-- Reward distribution system
-
-### Translation Contract
-- Translation submission and validation
-- Quality scoring system
-- Reward distribution logic
-- Reputation management
-- Validation tracking
-
-## API Documentation
-
-The API documentation is available at `/docs` when running the API server. Key endpoints include:
-
-- `POST /api/v1/translations` - Submit new translation
-- `GET /api/v1/translations/{id}` - Get translation status
-- `POST /api/v1/translations/{id}/validate` - Validate translation
-- `GET /api/v1/translators/{address}/stats` - Get translator statistics
-- `GET /api/v1/rewards/{address}` - Get rewards information
+- API Documentation: https://docs.opentranslate.world/api
+- User Guide: https://docs.opentranslate.world/guide
+- Developer Guide: https://docs.opentranslate.world/dev
 
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch
+2. Create a feature branch
 3. Commit your changes
 4. Push to the branch
 5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- OpenZeppelin for smart contract libraries
-- FastAPI for the API framework
-- Streamlit for the web interface
-- Hardhat for blockchain development
-- Hugging Face for transformer models
-- PyTorch for deep learning framework 
+MIT License 

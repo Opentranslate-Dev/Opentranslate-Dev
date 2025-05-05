@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <!-- Background -->
+  <rect width="500" height="500" fill="#FFFFFF" rx="20" ry="20"/>
+  <!-- Orbital network pattern -->
+  <g opacity="0.15">
+    <circle cx="250" cy="250" r="150" fill="none" stroke="#AABFE6" stroke-width="1"/>
+    <circle cx="250" cy="250" r="100" fill="none" stroke="#AABFE6" stroke-width="1"/>
+    <circle cx="250" cy="250" r="200" fill="none" stroke="#AABFE6" stroke-width="1"/>
+    <!-- Random connection nodes -->
+    <line x1="150" y1="250" x2="350" y2="250" stroke="#AABFE6" stroke-width="1"/>
+    <line x1="250" y1="150" x2="250" y2="350" stroke="#AABFE6" stroke-width="1"/>
+    <line x1="180" y1="180" x2="320" y2="320" stroke="#AABFE6" stroke-width="1"/>
+    <line x1="180" y1="320" x2="320" y2="180" stroke="#AABFE6" stroke-width="1"/>
+  </g>
+  <!-- Central Icon Element - Language Neuron Hub -->
+  <g>
+    <!-- Central neuron/hub -->
+    <circle cx="250" cy="250" r="35" fill="#2C82FF"/>
+    <circle cx="250" cy="250" r="25" fill="#FFFFFF"/>
+    <!-- Language connection orbs -->
+    <circle cx="160" cy="250" r="18" fill="#FF5E7D"/>
+    <circle cx="340" cy="250" r="18" fill="#7D4CFF"/>
+    <circle cx="250" cy="160" r="18" fill="#22E6A8"/>
+    <circle cx="250" cy="340" r="18" fill="#FFD166"/>
+    <circle cx="195" cy="195" r="15" fill="#3EDBF0"/>
+    <circle cx="305" cy="195" r="15" fill="#44CF9A"/>
+    <circle cx="195" cy="305" r="15" fill="#9C54FF"/>
+    <circle cx="305" cy="305" r="15" fill="#FF9D42"/>
+    <!-- Neural network connections - animated paths -->
+    <path d="M250,250 L160,250" stroke="#FF5E7D" stroke-width="4" stroke-linecap="round"/>
+    <path d="M250,250 L340,250" stroke="#7D4CFF" stroke-width="4" stroke-linecap="round"/>
+    <path d="M250,250 L250,160" stroke="#22E6A8" stroke-width="4" stroke-linecap="round"/>
+    <path d="M250,250 L250,340" stroke="#FFD166" stroke-width="4" stroke-linecap="round"/>
+    <path d="M250,250 L195,195" stroke="#3EDBF0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250,250 L305,195" stroke="#44CF9A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250,250 L195,305" stroke="#9C54FF" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250,250 L305,305" stroke="#FF9D42" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- No text elements as requested -->
+</svg> 

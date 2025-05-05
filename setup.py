@@ -13,12 +13,12 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="opentranslate",
     version="0.1.0",
-    author="OpenTranslate Team",
-    author_email="contact@opentranslate.org",
+    author="OpenTranslateDev",
+    author_email="contact@opentranslate.world",
     description="Revolutionary decentralized multilingual translation network for scientific knowledge",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/opentranslate/opentranslate",
+    url="https://opentranslate.world",
     packages=find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
@@ -111,10 +111,10 @@ setup(
     project_urls={
         "Bug Reports": "https://github.com/opentranslate/opentranslate/issues",
         "Source": "https://github.com/opentranslate/opentranslate",
-        "Documentation": "https://docs.opentranslate.org",
-        "Community": "https://community.opentranslate.org",
-        "Blog": "https://blog.opentranslate.org",
-        "Twitter": "https://twitter.com/OpenTranslate",
+        "Documentation": "https://docs.opentranslate.world",
+        "Community": "https://community.opentranslate.world",
+        "Blog": "https://blog.opentranslate.world",
+        "Twitter": "https://x.com/_OpenTranslate",
         "Discord": "https://discord.gg/opentranslate",
     },
 ) 
